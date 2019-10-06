@@ -1,0 +1,23 @@
+<h2 class="mat-h2">Registar Nuevo Paciente</h2>
+<div>
+    <mat-form-field>
+        <input matInput [(ngModel)]="nombres" placeholder="Nombres" required type="text">
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput [(ngModel)]="apellidos" placeholder="Apellidos" required  type="text">
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput [(ngModel)]="email" placeholder="email" required  type="email">
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput [(ngModel)]="dni"  placeholder="DNI" required type="text">
+    </mat-form-field>
+    <mat-form-field>
+            <input matInput [(ngModel)]="direccion" placeholder="Direccion" required  type="text">
+    </mat-form-field>
+    <mat-form-field>
+            <input matInput [(ngModel)]="telefono" placeholder="Teléfono"  required>
+    </mat-form-field>
+</div>
+<button mat-raised-button color="primary" (click)="operar()">Aceptar</button>
+<button mat-raised-button color="accent" (click)="cancelar()">Cancelar</button>
